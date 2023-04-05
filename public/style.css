@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300&display=swap');
+body{
+    background-color: #191d28;
+    font-family: 'Anuphan', sans-serif;
+    font-weight: 600;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    
+}
+.center select{
+    margin: 10px;
+    background: #505156;
+    padding:0.5rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.left p{
+    font-size: 2rem;
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+
+.tele{
+    background-color: #3dc6c1;
+    color: white;
+    font-weight: 800;
+    border: none;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing:0 1rem;
+    width: 100%;
+    
+}
+
+td{
+    background-color: #2e3241;
+    padding: 1rem;
+    /* border: 5px solid #191d28 ; */
+    color: white;
+    text-align: center;
+}
+td:first-child{
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+}
+td:last-child{
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+}
+tr{
+    border-radius: 20px;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle{
+    border-radius: 50%;
+    border-style: solid;
+    background-color: #191d28;
+    border-color: #3bbab6;
+}
+
+.blue{
+    color: #3bbab6;
+}
+
+.grey{
+    color: #505156;
+}
+
+.m-3{
+    margin: 1rem;
+}
+.p-3{
+    padding: 1rem;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #505156;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(19, 175, 196);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+@media only screen and (max-width:768px) {
+    
+ .navbar{
+    flex-direction: column;
+
+ }   
+ .center, .right{
+    justify-content: center;
+ }
+ table{
+    overflow: scroll;
+    width: 100vw;
+ }
+}

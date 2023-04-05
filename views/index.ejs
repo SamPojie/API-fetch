@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>WazirX</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="left ">
+                <p class="blue">HODLINFO<small style="color:antiquewhite">.com</small></p>
+                <span class='grey'>Powered by <span class="blue">Finstreet</span></span>
+            </div>
+            <div class="center p-3">
+                <select >
+                    <option value="INR">INR</option>
+                </select>
+                <select >
+                    <option value="INR">BTC</option>
+                </select>
+            </div>
+            <div class="right">    
+                <button class="circle blue m-3">58</button>
+                <button class="tele m-3">Connect Telegram</button>
+                <!-- <input type="radio" class=" m-3"></input> -->
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <table >
+        <thead>
+            <tr class="grey">
+                <th>#</th>
+                <th>name</th>
+                <th>Last</th>
+                <th>Buy / Sell Price</th>
+                <th>volume</th>
+                <th>base_unit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%for(let i = 0 ; i<data.length; i++){%>
+                <tr>
+                    <td><%=i+1%></td>
+                    <td><%= data[i].name%></td>
+                    <td> &#8377; <%= data[i].last%></td>
+                    <td> &#8377; <%= data[i].buy%> /  &#8377; <%= data[i].sell%></td>
+                    <td><%= data[i].volume%></td>
+                    <td><%= data[i].base_unit%></td>
+                </tr>
+            <%}%>
+        </tbody>
+    </table>
+</body>
+</html>
